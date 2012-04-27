@@ -1,0 +1,20 @@
+h1. JSActionSheet
+
+@UIActionSheets@ are great, but sometimes you just want a little something more than buttons. JSActionSheet affords you that luxury by allowing you to easily plug in a new UIActionSheet-like view into your iPhone app.
+
+A JSActionSheet with a UIPickerView can be easily added with the following few lines of code:
+
+<pre>
+- (IBAction)showPickerActionSheet:(id)sender {
+    JSPickerViewActionSheet *pickerAS = [[JSPickerViewActionSheet alloc] init];
+    pickerAS.delegate = self;
+    
+    [pickerAS showInView:self.view];
+}
+</pre>
+
+Be sure to declare that your UIViewController conforms to the JSActionSheetDelegate protocol, and that you import JSPickerViewActionSheet into your view controller's implementation file.
+
+The beauty is that MVC is maintained by allowing you to handle all delegation/data source methods for the @UIPickerView@ within your @UIViewController@!
+
+This is a work-in-progress and I will be progressively adding more and more variations on the @UIActionSheet@ theme. Contributions are always welcome!
