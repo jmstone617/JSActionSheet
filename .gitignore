@@ -13,3 +13,6 @@ build/*
 xcuserdata
 profile
 *.moved-aside
+Demo/JSActionSheetDemo.xcodeproj/project.xcworkspace/xcuserdata/Cheddz.xcuserdatad/UserInterfaceState.xcuserstate
+*.xcuserstate
+project.xcworkspace/
