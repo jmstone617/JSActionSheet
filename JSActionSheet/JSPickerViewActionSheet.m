@@ -54,8 +54,8 @@
 
 - (void)willMoveToSuperview:(UIView *)newSuperview {
     CGRect actionFrame = newSuperview.frame;
-    self.frame = CGRectMake(actionFrame.origin.x,
-                            actionFrame.origin.y - 20,
+    self.frame = CGRectMake(0,
+                            0,
                             actionFrame.size.width,
                             actionFrame.size.height);
     
@@ -74,7 +74,10 @@
                                 1);
     
     // Set the picker's frame
-    self.jsPickerView.frame = CGRectMake(0, _containerView.frame.size.height - 216, 320, 216);
+    self.jsPickerView.frame = CGRectMake(0, 
+                                         _containerView.frame.size.height - 216,
+                                         _containerView.frame.size.width,
+                                         216);
     
     // Set the done button just above it.
     UIImage *buttonImage = [UIImage imageNamed:@"doneButton"];
@@ -92,7 +95,7 @@
     [view addSubview:self];
     
     [UIView animateWithDuration:0.3 animations:^{
-        _containerView.frame = CGRectMake(0, self.frame.size.height - 280, 320, 280);
+        _containerView.frame = CGRectMake(0, self.frame.size.height - 280, self.frame.size.width, 280);
         _keyline.frame = CGRectMake(_containerView.frame.origin.x,
                                     _containerView.frame.origin.y - 1,
                                     _containerView.frame.size.width,

@@ -1,6 +1,6 @@
 h1. JSActionSheet
 
-@UIActionSheets@ are great, but sometimes you just want a little something more than buttons. JSActionSheet affords you that luxury by allowing you to easily plug in a new UIActionSheet-like view into your iPhone app.
+@UIActionSheets@ are great, but sometimes you just want a little something more than buttons. Sure, you could create a whole new @UIViewController@ subclass and present the view modally, but you lose the presenting view (goodbye transparency), and sometimes you don't want it to take up the whole screen. JSActionSheet affords you that luxury by allowing you to easily plug in a new UIActionSheet-like view into your iPhone app.
 
 A JSActionSheet with a UIPickerView can be easily added with the following few lines of code:
 
