@@ -3,7 +3,7 @@
 //  JSActionSheet
 //
 //  Created by Jordan Stone on 4/27/12.
-//  Copyright (c) 2012 IBM. All rights reserved.
+//  Copyright (c) 2012. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
